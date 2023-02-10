@@ -1,4 +1,4 @@
-# Portifólio de Exercícios 
+# Portfólio de Exercícios 
 
 Repositório responsável por armazenar os exercícios realizados na Trybe a partir de Fevereiro de 2023.
 
