@@ -12,7 +12,11 @@
     left: 150px
 }
 
-.baloon {}
+.baloon {
+    position: absolute;
+    top: 300px;
+    left: 320px;
+}
 
 .speach {
     font-size: 25px;
@@ -20,4 +24,7 @@
 
 .bowser {
     width: 200px;
+    position: absolute;
+    top: 450px;
+    left: 650px;
 }
