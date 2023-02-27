@@ -11,7 +11,6 @@ console.log("O módulo de a % b é: " + (a % b));
 console.log("-------------------------------------");
 
 /* parte 2 */
-
 // Utilize if/else para escrever um código que retorne o maior de dois números. Defina, no começo do seu código, duas variáveis com os valores que serão comparados.
 let c = 35;
 let d = 54;
@@ -23,6 +22,7 @@ if (c > d) {
 }
 console.log("-------------------------------------");
 console.log("-------------------------------------");
+
 // Utilize if/else para escrever um código que retorne o maior de três números. Defina, no começo do seu código, três variáveis com os valores que serão comparados.
 let num1 = 56;
 let num2 = 98;
@@ -50,6 +50,7 @@ if (num4 > 0) {
 }
 console.log("-------------------------------------");
 console.log("-------------------------------------");
+
 /* 🚀 Utilize if/else para escrever um código que defina três variaveis com os valores dos três ângulos internos de um triângulo. 
 Retorne true se os ângulos representarem os ângulos de um triângulo e false, caso contrário. Se algum ângulo for inválido, você deve retornar uma mensagem de erro.
 Para os ângulos serem de um triângulo válido, a soma dos três deve ser 180 graus.
@@ -72,6 +73,36 @@ if (valorPositivo) {
     console.log("Valor inválido");
 }
 
+console.log("-------------------------------------");
+console.log("-------------------------------------");
+
 /* parte 3  switch/case */
 
+let chess = 'KNIGHT';
 
+switch (chess.toLowerCase()) {
+    case 'queen':
+        console.log("Rainha -> Pode mover-se em qualquer direção, quantas casas quiser desde que estejam livres");
+        break;
+    case 'rook':
+        console.log("Torre -> Move-se em linha reta, tanto na vertical quanto na horizontal, quantas casas quiser.");
+        break;
+    case 'bishop':
+        console.log("Bispo -> Move-se na diagonal, quantas casas quiser");
+        break;
+    case 'knight':
+        console.log("Cavalo -> Movimenta-se em L, pode pular peças");
+        break;
+    case 'king':
+        console.log("Rei -> Pode mover-se em qualquer direção, porém apenas uma casa por vez");
+        break;
+    case 'pawn':
+        console.log("Peão -> Move-se sempre uma casa para frente, exceto no primeiro movimento, quando pode mover-se duas casas.");
+        break;
+    default:
+        console.log("Erro. Tente novamente");
+        break;
+}
+
+console.log("-------------------------------------");
+console.log("-------------------------------------");
