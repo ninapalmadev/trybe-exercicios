@@ -46,7 +46,7 @@ if (num4 > 0) {
 } else if (num4 < 0) {
     console.log("negative");
 } else {
-    console.log("zero");    
+    console.log("zero");
 }
 console.log("-------------------------------------");
 console.log("-------------------------------------");
@@ -64,9 +64,9 @@ let somaAngulos = ang1 + ang2 + ang3;
 let valorPositivo = ang1 > 0 && ang2 > 0 && ang3 > 0;
 
 if (valorPositivo) {
-    if(somaAngulos === 180){
+    if (somaAngulos === 180) {
         console.log(true);
-    } else{
+    } else {
         console.log(false);
     }
 } else {
@@ -106,3 +106,23 @@ switch (chess.toLowerCase()) {
 
 console.log("-------------------------------------");
 console.log("-------------------------------------");
+
+/* parte 4 conversor de porcentagem */
+
+let nota = 40;
+
+if (nota < 0 || nota > 100) {
+    console.log("Erro. Coloque uma nota de 0 a 100.");
+}   else if(nota >= 90) {
+    console.log("A");
+} else if (nota >= 80) {
+    console.log("B");
+} else if (nota >= 70) {
+    console.log("C");
+} else if (nota >= 60) {
+    console.log("D");
+} else if (nota >= 50) {
+    console.log("E");
+} else {
+    console.log("F");
+} 
