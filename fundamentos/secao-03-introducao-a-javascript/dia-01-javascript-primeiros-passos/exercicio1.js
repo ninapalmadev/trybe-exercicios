@@ -9,6 +9,7 @@ console.log("A multiplicação de a X b é: " + (a * b));
 console.log("A divisão de a / b é: " + (a / b));
 console.log("O módulo de a % b é: " + (a % b));
 console.log("-------------------------------------");
+console.log("------------Exercicio 2-----------");
 
 /* parte 2 */
 // Utilize if/else para escrever um código que retorne o maior de dois números. Defina, no começo do seu código, duas variáveis com os valores que serão comparados.
@@ -21,7 +22,7 @@ if (c > d) {
     console.log("maior número é d " + d);
 }
 console.log("-------------------------------------");
-console.log("-------------------------------------");
+console.log("------------Exercicio 3-----------");
 
 // Utilize if/else para escrever um código que retorne o maior de três números. Defina, no começo do seu código, três variáveis com os valores que serão comparados.
 let num1 = 56;
@@ -36,7 +37,7 @@ if (num1 > num2 && num1 > num3) {
     console.log("o maior número é: " + num3);
 }
 console.log("-------------------------------------");
-console.log("-------------------------------------");
+console.log("------------Exercicio 4-----------");
 
 /* Utilize if/else para escrever um código que, dado um valor recebido como parâmetro, retorne: “positive”, se esse valor for positivo; “negative”, 
 se esse valor for negativo, e “zero”, caso esse valor não seja nem positivo nem negativo. */
@@ -49,7 +50,7 @@ if (num4 > 0) {
     console.log("zero");
 }
 console.log("-------------------------------------");
-console.log("-------------------------------------");
+console.log("------------Exercicio 5-----------");
 
 /* 🚀 Utilize if/else para escrever um código que defina três variaveis com os valores dos três ângulos internos de um triângulo. 
 Retorne true se os ângulos representarem os ângulos de um triângulo e false, caso contrário. Se algum ângulo for inválido, você deve retornar uma mensagem de erro.
@@ -74,7 +75,7 @@ if (valorPositivo) {
 }
 
 console.log("-------------------------------------");
-console.log("-------------------------------------");
+console.log("------------Exercicio 6-----------");
 
 /* parte 3  switch/case */
 
@@ -105,8 +106,7 @@ switch (chess.toLowerCase()) {
 }
 
 console.log("-------------------------------------");
-console.log("-------------------------------------");
-
+console.log("------------Exercicio 7-----------");
 /* parte 4 conversor de porcentagem */
 
 let nota = 40;
@@ -127,7 +127,7 @@ if (nota < 0 || nota > 100) {
     console.log("F");
 } 
 console.log("-------------------------------------");
-console.log("-------------------------------------");
+console.log("------------Exercicio 8-----------");
 
 /* há um par entre nós*/
 
@@ -141,10 +141,29 @@ if (numero1 % 2 === 0 || numero2 % 2 === 0 || numero3 % 2 === 0 ) {
     console.log(false);
 }
 console.log("-------------------------------------");
-console.log("-------------------------------------");
+console.log("------------Exercicio 9-----------");
 
 if (numero1 % 2 !== 0 || numero2 % 2 !== 0 || numero3 % 2 !== 0 ) {
     console.log(true);
 } else {
     console.log(false);
 }
+console.log("-------------------------------------");
+console.log("------------Exercicio 10-----------");
+
+/* produto e venda  */
+
+let custoProduto = 23;
+let vendaProduto = 50;
+if (custoProduto >= 0 && vendaProduto >= 0) {
+    let impostoProduto = custoProduto * 0.2;
+    let valorCustoTotal = custoProduto + impostoProduto;
+    let lucro = (vendaProduto - valorCustoTotal) * 1000;
+    console.log(lucro);
+} else {
+    console.log("Erro, não foi possivel fazer o calculo");
+}
+
+console.log("-------------------------------------");
+console.log("------------Exercicio 11-----------");
+
