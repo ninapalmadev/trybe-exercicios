@@ -126,3 +126,19 @@ if (nota < 0 || nota > 100) {
 } else {
     console.log("F");
 } 
+console.log("-------------------------------------");
+console.log("-------------------------------------");
+
+/* há um par entre nós*/
+
+let numero1 = 2;
+let numero2 = 5;
+let numero3 = 6;
+
+if (numero1 % 2 === 0 || numero2 % 2 === 0 || numero3 % 2 === 0 ) {
+    console.log(true);
+} else {
+    console.log(false);
+}
+console.log("-------------------------------------");
+console.log("-------------------------------------");
