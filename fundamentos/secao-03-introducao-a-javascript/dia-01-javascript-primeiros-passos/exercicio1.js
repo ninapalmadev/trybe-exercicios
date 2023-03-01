@@ -165,5 +165,5 @@ if (custoProduto >= 0 && vendaProduto >= 0) {
 }
 
 console.log("-------------------------------------");
-console.log("------------Exercicio 11-----------");
+console.log("------------Exercicio 11 - Imposto-----------");
 
