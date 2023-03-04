@@ -113,7 +113,7 @@ let nota = 40;
 
 if (nota < 0 || nota > 100) {
     console.log("Erro. Coloque uma nota de 0 a 100.");
-}   else if(nota >= 90) {
+} else if (nota >= 90) {
     console.log("A");
 } else if (nota >= 80) {
     console.log("B");
@@ -125,7 +125,7 @@ if (nota < 0 || nota > 100) {
     console.log("E");
 } else {
     console.log("F");
-} 
+}
 console.log("-------------------------------------");
 console.log("------------Exercicio 8-----------");
 
@@ -135,7 +135,7 @@ let numero1 = 2;
 let numero2 = 5;
 let numero3 = 6;
 
-if (numero1 % 2 === 0 || numero2 % 2 === 0 || numero3 % 2 === 0 ) {
+if (numero1 % 2 === 0 || numero2 % 2 === 0 || numero3 % 2 === 0) {
     console.log(true);
 } else {
     console.log(false);
@@ -143,7 +143,7 @@ if (numero1 % 2 === 0 || numero2 % 2 === 0 || numero3 % 2 === 0 ) {
 console.log("-------------------------------------");
 console.log("------------Exercicio 9-----------");
 
-if (numero1 % 2 !== 0 || numero2 % 2 !== 0 || numero3 % 2 !== 0 ) {
+if (numero1 % 2 !== 0 || numero2 % 2 !== 0 || numero3 % 2 !== 0) {
     console.log(true);
 } else {
     console.log(false);
@@ -165,5 +165,37 @@ if (custoProduto >= 0 && vendaProduto >= 0) {
 }
 
 console.log("-------------------------------------");
-console.log("------------Exercicio 11 - Imposto-----------");
+console.log("------------Exercicio 11-----------");
 
+let salario = 4500.10;
+let taxaINSS;
+let taxaIR;
+if (salario <= 1556.94) {
+    taxaINSS = salario * 0.08;
+} else if (salario <= 2594.92) {
+    taxaINSS = salario * 0.09;
+} else if (salario <= 5189.82) {
+    taxaINSS = salario * 0.11;
+} else {
+    taxaINSS = 570.88;
+}
+let salarioBase = salario - taxaINSS;
+console.log("O salário base com a taxa do INSS é: " + salarioBase);
+console.log("-------------------------------------");
+
+if (salarioBase > 1903.99) {
+    taxaIR = 0;
+} else if (salarioBase <= 2826.65) {
+    taxaIR = (salarioBase * 0.075) - 142.80;
+} else if (salarioBase <= 3751.05) {
+    taxaIR = (salarioBase * 0.15) - 354.80;
+} else if (salarioBase <= 4664.68) {
+    taxaIR = (salarioBase * 0.225) - 636.13;
+} else {
+    taxaIR = (salarioBase * 0.275) - 869.36;
+}
+
+let salarioLiquido = salarioBase - taxaIR;
+
+
+console.log("Salário:", salarioLiquido);
