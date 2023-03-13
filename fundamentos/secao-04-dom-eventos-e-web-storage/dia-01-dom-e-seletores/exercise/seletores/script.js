@@ -9,6 +9,7 @@ for (let index = 0; index < emergencyTitle.length; index += 1) {
     emergencyTitle[index].style.backgroundColor = "purple";
 }
 
+
 let noEmergency = document.querySelector(".no-emergency-tasks");
 noEmergency.style.backgroundColor = "rgb(243, 233, 96)";
 
