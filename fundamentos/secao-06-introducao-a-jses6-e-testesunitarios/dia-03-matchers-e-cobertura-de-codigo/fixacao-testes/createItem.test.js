@@ -27,5 +27,7 @@ describe('a função createItem', () => {
   it('Lança um erro se o preço é negativo', () => {
     expect(() => createItem('banana', '1kg', -1.99, 20)).toThrow();
   });
-  it.todo('Lança um erro se o preço é zero');
+  it('Lança um erro se o preço é zero', () => {
+    expect(() => createItem('banana', '1kg', 0, 20)).toThrow();
+  });
 });
