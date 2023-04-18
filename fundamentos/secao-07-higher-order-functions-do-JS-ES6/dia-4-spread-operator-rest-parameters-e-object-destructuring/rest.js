@@ -16,3 +16,6 @@ console.log(sum(4, 7, 8, 9, 60)); // 88
 // Experimente passar mais números como argumento para a função sum. Você verá que, independentemente do número de argumentos passados, a função irá executar a soma. Ao utilizar o rest, suas funções podem ficar mais flexíveis quando você precisa passar múltiplos parâmetros, pois não precisa especificar quantos argumentos a função irá receber!
 
 // Anota aí 📝: O spread é responsável por espalhar valores, e ele pode ser utilizado para passar parâmetros ao EXECUTAR uma função. Já o rest pode ser utilizado para agrupar valores ao DECLARAR funções que podem receber múltiplos parâmetros.
+
+//O parâmetro rest permite criar funções que recebam um número variável de argumentos.
+// Alternativa correta. O rest tem justamente a função de flexibilizar a quantidade de parâmetros a serem passados para uma função

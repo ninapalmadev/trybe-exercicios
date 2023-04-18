@@ -20,3 +20,11 @@ const getPosition = (latitude, longitude) => ({
 
 
 console.log(getPosition(-19.8157, -43.9542));
+
+const newBook = (title, author, price, discount) => ({
+  title, 
+  author,
+  finalPrice: price - discount,
+});
+
+console.log(newBook('asas', 'asdasds', 23, 4));

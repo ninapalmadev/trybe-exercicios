@@ -70,3 +70,5 @@ const printProductDetails = ({ name, price, seller }) => {
 
 printProductDetails(product); // Promoção! Smart TV Crystal UHD por apenas 1899.05 é só aqui: Casas de Minas
 
+// Object destructuring permite passar parâmetros para uma função.
+// Alternativa correta. É possível enviar como parâmetro de uma função apenas aquelas propriedades que serão usadas, sem a necessídade de passar o objeto todo.
