@@ -16,21 +16,34 @@ class App extends React.Component {
   }
 
   handleButtonOne = () => {
+    const { btnOne } = this.state;
     this.setState((stateFirst) => ({
       btnOne: stateFirst.btnOne + 1,
-    }))
+    }), () => {
+      console.log(`Botão 1 ${this.getButtonColor(btnOne)}`);
+    });
   }
 
   handleButtonTwo = () => {
+    const { btnTwo } = this.state;
     this.setState((stateFirstTwo) => ({
       btnTwo: stateFirstTwo.btnTwo + 1,
-    }))
+    }), () => {
+      console.log(`Botão 1 ${this.getButtonColor(btnTwo)}`);
+    });
   }
 
   handleButtonThree = () => {
+    const {btnThree } = this.state;
     this.setState(({btnThree}) => ({
       btnThree: btnThree+1,
-    }))
+    }), () => {
+      console.log(`Botão 1 ${this.getButtonColor(btnThree)}`);
+    });
+  }
+
+  getButtonColor(num) {
+    return num % 2 === 0 ? 'green' : 'white';
   }
 
   render() {
@@ -41,18 +54,21 @@ class App extends React.Component {
       <button
         type="button"
         onClick={ this.handleButtonOne }
+        style={ { backgroundColor: this.getButtonColor(btnOne) } }
       >
         {`Cliques botão 1: ${btnOne}`}
       </button>
       <button
         type="button"
         onClick={ this.handleButtonTwo }
+        style={ { backgroundColor: this.getButtonColor(btnTwo) } }
       >
         {`Cliques botão 2: ${btnTwo}`}
       </button>
       <button
         type="button"
         onClick={ this.handleButtonThree }
+        style={ { backgroundColor: this.getButtonColor(btnThree) } }
       >
         {`Cliques botão 3: ${btnThree}`}
       </button>
