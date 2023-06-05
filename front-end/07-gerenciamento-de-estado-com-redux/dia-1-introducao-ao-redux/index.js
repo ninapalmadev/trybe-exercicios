@@ -25,3 +25,11 @@ const incrementBtn = document.querySelector('button');
 incrementBtn.addEventListener('click', () => {
   console.log('click');
 });
+
+// 5. lendo as alterações do Estado
+store.subscribe(() => {
+  const globalState = store.getState();
+
+  const counterEl = document.querySelector('h2');
+  counterEl.textContent = globalState.count;
+});
