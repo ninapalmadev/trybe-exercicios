@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 50%;
+  height: auto;
+  align-items: center;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+#img {
+  margin: 20px auto;
+  width: 500px;
+}
