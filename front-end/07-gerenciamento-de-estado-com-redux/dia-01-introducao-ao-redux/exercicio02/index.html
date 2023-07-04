@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Trybe</title>
+    <script src="https://unpkg.com/redux@latest/dist/redux.js"></script>
+    <style>
+      body {
+        color: white;
+        background-color: #333;
+        font-family: sans-serif;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Minha Aplicação</h1>
+      <p>Status: Você está <span id="status">Offline</span></p>
+      <button id="toggle-theme">Light Mode</button>
+      <button id="toggle-status">Ficar Online</button>
+    </div>
+    <script>
+      const INITIAL_STATE = {
+        status: 'offline',
+        theme: 'dark',
+      };
+
+      const reducer = (state = INITIAL_STATE, action) => {
+        switch(action.type) {
+          case 'LIGHT_MODE':
+            return { 
+              ...state, 
+              theme: 'light',
+              status: 'online',
+            };
+          case 'DARK_MODE':
+            return { 
+              ...state, 
+              theme: 'dark',
+              status: 'offline',
+            };
+          default: 
+          return state;
+      }
+    }
+      const store = Redux.createStore(reducer);
+
+      const themeButton = document.getElementById('toggle-theme');
+      const statusButton = document.getElementById('toggle-status');
+
+      themeButton.addEventListener('click', () => {
+        store.dispatch({ type: 'LIGHT_MODE' });
+      });
+
+      statusButton.addEventListener('click', () => {
+        store.dispatch({ type: 'DARK_MODE' });
+      });
+
+      store.subscribe(() => {
+        const state = store.getState();
+        const status = document.getElementById('status');
+        const container = document.querySelector('.container');
+        if (state.theme === 'light') {
+          container.style.backgroundColor = 'white';
+          container.style.color = 'black';
+          themeButton.innerText = 'Online';
+        } else {
+          container.style.backgroundColor = '#333';
+          container.style.color = 'white';
+          themeButton.innerText = 'Offline';
+        }
+        status.innerText = state.status;
+      })
+    </script>
+  </body>
+</html>
