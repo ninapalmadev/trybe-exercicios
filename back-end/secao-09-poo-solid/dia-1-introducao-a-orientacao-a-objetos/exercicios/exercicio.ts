@@ -51,9 +51,28 @@ class Student {
     }
     this._assignmentsGrades = newGrades;
   }
+
+  sumGrades(): number {
+    return [...this._examsGrades, ...this._assignmentsGrades]
+    .reduce((previousNote, note) => {
+      const nextNote = note + previousNote;
+      return nextNote;
+    }, 0);
+  }
+
+  sumAverageGrade(): number {
+    const sumGrades = this.sumGrades();
+    const average = this.examsGrades.length + this.assignmentsGrades.length;
+
+    return Math.round(sumGrades / average);
+  }
 }
 
 const personOne = new Student('202001011', 'Maria da Silva');
 console.log(personOne);
+personOne.examsGrades = [10, 8, 9, 7];
+personOne.assignmentsGrades = [10, 9];
+console.log("A soma das notas é: ", personOne.sumGrades());
+console.log("A média das notas é: ", personOne.sumAverageGrade());
 const personTwo = new Student('202001012', 'João da Silva');
 console.log(personTwo);
