@@ -2,7 +2,7 @@ class Tv {
   brand: string;
   size: number;
   resolution: string;
-  conections: string[];
+  connections: string[];
   connectedTo?: string;
 
   constructor(b: string, s: number, r: string, c: string[], ct?: string) {
@@ -10,12 +10,13 @@ class Tv {
     this.brand = b;
     this.size = s;
     this.resolution = r;
-    this.conections = c;
+    this.connections = c;
     this.connectedTo = ct;
   }
 
-  turnOn() {
-    console.log(`${this.brand}: TV is on`);
+  turnOn():void {
+    `TV ${this.brand}, ${this.size}", resolution: ${this.resolution} \n\
+      available connections: ${this.connections}`
   }
 }
 
