@@ -35,11 +35,11 @@ const flour = addProducts<Flour>(flours, newFlour);
 console.log('bread', bread);
 console.log('flour', flour);
 
-import axios from 'axios';
+// import axios from 'axios';
 
-async function fetchApi(endpoint: string) {
-  const { data } = await axios.get(`http://localhost:3001/${endpoint}`);
-  return data;
-}
+// async function fetchApi(endpoint: string) {
+//   const { data } = await axios.get(`http://localhost:3001/${endpoint}`);
+//   return data;
+// }
 
-fetchApi('breads')
+// fetchApi('breads')
