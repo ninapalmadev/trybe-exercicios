@@ -22,6 +22,8 @@ class Animal {
 
   constructor(public name: string, private birthDate: Date) { }
 
+  // constructor(public name: string, protected birthDate: Date) { }
+
   get age() {
     /*Para operar com datas, vamos operar somente com milissegundos. Uma data
     é o número de milissegundos desde o dia 01/01/1970 (era Unix).*/
@@ -57,6 +59,10 @@ class Bird extends Animal {
   fly() {
     console.log(`${this.name} is flying`);
   }
+
+  // showBirthDate() {
+  //   console.log(this.birthDate);
+  // }
 }
 
 const parrot = new Bird('Parrot', new Date(Date.parse('Jun 07, 2015')));
